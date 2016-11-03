@@ -1,7 +1,7 @@
 <pre>
     BackEnd: {{ $a->info->pxname }}
     Servers: {{ $a->info->svname }}
-    Status:  {{ $a->info->status }}e sim P
+    Status:  {{ $a->info->status }}
     Status:  {{ $a->health->status }}
 
     TimeStatus(Segundos): {{ floor($a->health->status_change%60) }} Segundos

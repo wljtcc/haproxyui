@@ -25,9 +25,6 @@ class HAProxyController extends Controller
         $stats = HAProxy\Stats::get($exec);
         $backend = $stats->getBackendNames();
 
-        //$a = $stats->dumpServiceTree();
-        //$a = $stats->getBackendServices('DEMO_DOCFLOW');
-        //$a = $stats->getTree();
         $a = $stats->getServiceStats('DEMO_DOCFLOW','URUGUAI');
 
         return view('haproxy.haproxy')
