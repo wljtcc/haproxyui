@@ -16,3 +16,9 @@ Route::get('/', function () {
 });
 
 Route::get('/monitor','HAProxyController@HAProxy');
+
+// Backend
+Route::get('/backend','HAProxyController@haproxyBackend');
+
+
+Route::get('/temp','HAProxyController@haproxyBackendServersStats');

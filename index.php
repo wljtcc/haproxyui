@@ -12,7 +12,7 @@
     $stats = HAProxy\Stats::get($exec);
     printf($stats->dumpServiceTree());
 
-    $server =  $stats->getServiceStats('DEMO_DOCFLOW','URUGUAI');
+    $server =  $stats->getServiceStats('DEMO_DOCFLOW','URUGUAIl');
     printf("<br>-------------------------------------<br>");
     echo "{$server->info->service_name}";
     printf("<br>-------------------------------------<br>");

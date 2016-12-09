@@ -24,5 +24,5 @@
 </pre>
 
 <pre>
-    <?php print_r($a);?>
+    <?php// print_r($a);?>
 </pre>
